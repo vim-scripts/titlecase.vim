@@ -1,0 +1,17 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=439
+
+Sample:
+Given:
+Change a range or visual to title case, i.e.
+":TitleCase<CR>" results in:
+Change A Range Or Visual To Title Case, I.E.
+
+This simple changes (via :s) \<\l (start of word, lowercase a-z) to uppercase. Probably not perfect Titlecase but works good enough for a quickie!
+
+Remaps (with no elegance) <F5> to FeralTitleCase_Visual, change as desired.
+
+Visual method works for single line visuals only, multi line it tries to be clever and makes a mess.. use with caution, single (part of) line works fine though. (needs to have a check that say I don't do multi line visuals!; or only char wise visuals or something).
+Range Command (defaults to current line) is:TitleCase
+Its small, crude and dirty. But it works :)
+
+Happy VIMing!
